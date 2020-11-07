@@ -11,7 +11,7 @@ class Fmcsadmin < Formula
 
   def install
     system "make", "build-macos"
-    system "cp","dist/macos/fmcsadmin", "/usr/local/bin"
+    bin.install "dist/macos/fmcsadmin"
   end
 
   test do
