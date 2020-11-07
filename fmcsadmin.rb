@@ -1,6 +1,5 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Fmcsadmin < Formula
   desc "fmcsadmin is the command line tool to administer the Database Server component of FileMaker Cloud for AWS and FileMaker Server via FileMaker Admin API."
   homepage "https://github.com/emic/fmcsadmin"
@@ -11,13 +10,10 @@ class Fmcsadmin < Formula
   depends_on "go" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # system "go", "build", *std_go_args
     system "make", "build-macos"
     system "cp","dist/macos/fmcsadmin", "/usr/local/bin
   end
 
   test do
-    # system "false"
   end
 end
