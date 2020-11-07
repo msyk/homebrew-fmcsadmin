@@ -14,6 +14,7 @@ class Fmcsadmin < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # system "go", "build", *std_go_args
     system "make", "build-macos"
+    system "cp","dist/macos/fmcsadmin". "/usr/local/bin
   end
 
   test do
