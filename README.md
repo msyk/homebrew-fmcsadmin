@@ -18,7 +18,7 @@ brew install fmcsadmin
 
 In case of updating fmcsadmin, this formula has to be update. The url value on fmcsadmin.rb file includes the version number, and the sha256 value has to be updated.
 
-- Show the hash value of url: brew fetch fmcsadmin
+- Get the hash value of url: `openssl sha256 <downloaded file>`
 
 ## Logs
 
