@@ -1,5 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class Fmcsadmin < Formula
   desc "fmcsadmin is the command line tool to administer the Database Server component of FileMaker Cloud for AWS and FileMaker Server via FileMaker Admin API."
   homepage "https://github.com/emic/fmcsadmin"
@@ -13,7 +11,9 @@ class Fmcsadmin < Formula
     system "go", "get", "-u", "github.com/mattn/go-scan"
     system "go", "get", "-u", "github.com/olekukonko/tablewriter"
     system "go", "get", "-u", "golang.org/x/crypto/ssh/terminal"
-    system "make", "build-macos"
+#    system "make", "build-macos"
+    system "mkdir", "-p", "dist/fmcsadmin-1.1.0-macos"
+    system "GOOS=darwin", "GOARCH=amd64", "CGO_ENABLED=0", "go", "build", "-ldflags", "-X main.version=1.1.0", "-o", "dist/fmcsadmin-1.1.0-macos/fmcsadmin"
     bin.install "dist/macos/fmcsadmin"
   end
 
