@@ -1,8 +1,8 @@
 class Fmcsadmin < Formula
   desc "The 'fmcsadmin' is the command-line tool to administrate FileMaker Server via FileMaker Admin API."
   homepage "https://github.com/emic/fmcsadmin"
-  url "https://github.com/emic/fmcsadmin/releases/download/1.1.0/fmcsadmin-1.1.0-macos.zip"
-  sha256 "e9dbe141b38812b13d227c145f3c7c2e5d5af24f500f81f897227acfe56a3784"
+  url "https://github.com/emic/fmcsadmin/archive/1.1.0.tar.gz"
+  sha256 "e6bf17371f241616ef1168f912b29376922595821fa74dea00d98614cf300b0b"
   license "MIT License"
 
   depends_on "go" => :build
