@@ -6,7 +6,7 @@ class Fmcsadmin < Formula
   license "MIT License"
 
   def install
-    bin.install fmcsadmin
+    bin.install "fmcsadmin"
   end
 
 end
