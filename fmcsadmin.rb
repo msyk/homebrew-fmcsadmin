@@ -10,6 +10,9 @@ class Fmcsadmin < Formula
   depends_on "go" => :build
 
   def install
+    system "go", "get", "-u", "github.com/mattn/go-scan"
+    system "go", "get", "-u", "github.com/olekukonko/tablewriter"
+    system "go", "get", "-u", "golang.org/x/crypto/ssh/terminal"
     system "make", "build-macos"
     bin.install "dist/macos/fmcsadmin"
   end

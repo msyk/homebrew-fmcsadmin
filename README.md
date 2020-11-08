@@ -9,8 +9,10 @@ fmcsadmin is the command line tool to administer the Database Server component o
 [Homebrew](https://brew.sh/) is the package management system for macOS and has to be already installed.
 To install the fmcsadmin command, it's just two commands as below:
 
+```
 brew tap msyk/fmcsadmin
 brew install fmcsadmin
+```
 
 Sorry: the error is going to arise and command file won't install, so far.
 
