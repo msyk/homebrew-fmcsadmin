@@ -14,8 +14,6 @@ brew tap msyk/fmcsadmin
 brew install fmcsadmin
 ```
 
-Sorry: the error is going to arise and command file won't install, so far.
-
 ## Just my memo
 
 In case of updating fmcsadmin, this formula has to be update. The url value on fmcsadmin.rb file includes the version number, and the sha256 value has to be updated.
@@ -24,4 +22,4 @@ In case of updating fmcsadmin, this formula has to be update. The url value on f
 
 ## Logs
 
-- 2020-11-08: Made this, and published, but it's not perfect.
+- 2020-11-08: Made this, and published.
