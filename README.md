@@ -14,6 +14,11 @@ brew tap msyk/fmcsadmin
 brew install fmcsadmin
 ```
 
+To update the fmsdadmin command as below:
+```
+brew upgrade msyk/fmcsadmin/fmcsadmin
+```
+
 ## Just my memo
 
 In case of updating fmcsadmin, this formula has to be update. The url value on fmcsadmin.rb file includes the version number, and the sha256 value has to be updated.
