@@ -28,3 +28,4 @@ In case of updating fmcsadmin, this formula has to be update. The url value on f
 ## Logs
 
 - 2020-11-08: Made this, and published.
+- 2021-02-17: Updated for ver.1.2.0.
