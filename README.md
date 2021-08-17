@@ -10,6 +10,7 @@ fmcsadmin is the command line tool to administer the Database Server component o
 To install the fmcsadmin command, it's just two commands as below:
 
 ```
+brew tap msyk/fmcsadmin
 brew install --cask fmcsadmin
 ```
 
